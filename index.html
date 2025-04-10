@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Advanced HTML5 Elements and Forms</h1>
+  </header>
+
+  <!-- Ordered list with Roman numerals -->
+  <section>
+    <h2>Topics</h2>
+    <ol type="I">
+      <li>Images</li>
+      <li>Lists</li>
+      <li>Tables</li>
+      <li>Forms</li>
+      <li>Multimedia</li>
+    </ol>
+  </section>
+
+  <!-- External image -->
+  <section>
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg" alt="Beautiful landscape" width="600" />
+  </section>
+
+  <!-- Contact table -->
+  <section>
+    <h2>Contact List</h2>
+    <table border="1" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jane Doe</td>
+          <td>123 Elm Street</td>
+          <td>555-1234</td>
+          <td>jane@example.com</td>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+          <td>456 Oak Avenue</td>
+          <td>555-5678</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Alice Brown</td>
+          <td>789 Maple Road</td>
+          <td>555-8765</td>
+          <td>alice@example.com</td>
+        </tr>
+        <tr>
+          <td>Bob White</td>
+          <td>321 Pine Blvd</td>
+          <td>555-4321</td>
+          <td>bob@example.com</td>
+        </tr>
+        <tr>
+          <td>Emma Green</td>
+          <td>654 Birch Way</td>
+          <td>555-2468</td>
+          <td>emma@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <!-- Name Field -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required /><br /><br />
+
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@domain.com" required /><br /><br />
+
+      <!-- Password Field -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6" /><br /><br />
+
+      <!-- Date Field -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <!-- Dropdown -->
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select--</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+      </select><br /><br />
+
+      <!-- Radio Buttons -->
+      <label>Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br /><br />
+
+      <!-- Checkboxes -->
+      <label>Interests:</label><br />
+      <input type="checkbox" id="music" name="interests" value="music" />
+      <label for="music">Music</label><br />
+      <input type="checkbox" id="sports" name="interests" value="sports" />
+      <label for="sports">Sports</label><br />
+      <input type="checkbox" id="reading" name="interests" value="reading" />
+      <label for="reading">Reading</label><br /><br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Register" />
+    </form>
+  </section>
+
+  <!-- Multimedia section -->
+  <section>
+    <h2>Multimedia</h2>
+    <!-- Audio -->
+    <h3>Sample Audio</h3>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video -->
+    <h3>Sample Video</h3>
+    <video width="480" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Advanced HTML5 Elements</p>
+  </footer>
+</body>
+</html>
